@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="commons-codec-1.10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/sample/lib/poilib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/sample/lib/poilib/commons-collections4-4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/sample/lib/poilib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/sample/lib/poilib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/sample/lib/poilib/log4j-1.2.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
