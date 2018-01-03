@@ -4,10 +4,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
+import javafx.util.Callback;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
@@ -124,8 +126,24 @@ public class Controller {
         atSheetCol.setCellValueFactory(new PropertyValueFactory<ResultRow, String>("sheetName"));
         atFileCol.setCellValueFactory(new PropertyValueFactory<ResultRow, String>("filePath"));
         atRowCol.setCellValueFactory(new PropertyValueFactory<ResultRow, Integer>("rowNumber"));
+        orderCol.setCellFactory(new Callback<TableColumn<ResultRow, Integer>, TableCell<ResultRow, Integer>>() {
+        @Override
+        public TableCell<ResultRow, Integer> call(TableColumn<ResultRow, Integer> param) {
+            return new TableCell<ResultRow, Integer>(){
+                @Override
+                protected void updateItem(Integer item, boolean empty) {
+                    super.updateItem(item, empty);
 
-//        row.setCellValueFactory(new PropertyValueFactory<ResultRow, String>("searchString"));
+                    Label label = new Label();
+                    label.setAlignment(Pos.CENTER);
+                    int index = getIndex() + 1;
+                    label.setText(index + "");
+                    setGraphic(label);
+                }
+            };
+        }
+    });
+
     }
 
     public void selectXLSFiles()
