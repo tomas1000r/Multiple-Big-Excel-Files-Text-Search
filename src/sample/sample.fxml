@@ -10,6 +10,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -25,25 +26,64 @@
                   <VBox minWidth="-Infinity" prefWidth="300.0">
                      <children>
                         <Button mnemonicParsing="false" onAction="#selectXLSFiles" text="Add Excel files (*.xls, *.xlsx)" />
-                        <ListView fx:id="fileLV" prefHeight="200.0" prefWidth="200.0" />
-                        <Button mnemonicParsing="false" onAction="#clearFileList" text="Clear file list" />
-                        <TextArea fx:id="searchStringTA" promptText="Paste string to search, one per line" />
-                        <Button mnemonicParsing="false" onAction="#startSearching" text="Start serching" />
+                        <ListView fx:id="fileLV" prefHeight="200.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </ListView>
+                        <Button mnemonicParsing="false" onAction="#clearFileList" text="Clear file list">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <TextArea fx:id="searchStringTA" promptText="Paste string to search, one per line">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Button mnemonicParsing="false" onAction="#startSearching" text="Start serching">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
                      </children>
                      <padding>
-                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                        <Insets bottom="20.0" right="20.0" top="10.0" />
                      </padding>
                   </VBox>
                </content>
             </Tab>
-            <Tab text="Options">
+            <Tab closable="false" text="Options">
                <content>
-                  <VBox prefHeight="200.0" prefWidth="100.0">
+                  <VBox>
                      <children>
                         <CheckBox fx:id="matchCaseCB" mnemonicParsing="false" text="Match case?" />
                      </children>
                      <padding>
-                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                        <Insets bottom="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Settings">
+               <content>
+                  <VBox>
+                     <children>
+                        <Label text="Activate license" />
+                        <TextField promptText="Enter your email address">
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField promptText="Enter your transaction ID">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" text="Activate" />
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
                      </padding>
                   </VBox>
                </content>
