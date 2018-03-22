@@ -32,7 +32,7 @@ public class Controller {
     @FXML
     ListView<String> fileLV;
 
-    ObservableList<String> filePaths;
+    private ObservableList<String> filePaths;
 
     @FXML
     TextArea searchStringTA;
@@ -66,12 +66,9 @@ public class Controller {
 
     private static ArrayList<ResultRow> getMatch(Sheet sheet, String[] searchStrings, String filePath, boolean matchCase)
     {
-
-        System.out.println("finding match");
         Iterator<Row> iterator = sheet.iterator();
         ArrayList<ResultRow> rows = new ArrayList<ResultRow>();
 
-        System.out.println("match case is: " + matchCase);
         while (iterator.hasNext()) {
 
             Row currentRow = iterator.next();
@@ -97,22 +94,18 @@ public class Controller {
                         rows.add(new ResultRow(
                                 x, filePath, sheetName, currentRow.getRowNum()
                         ));
-                        System.out.println(x + " available at: " + currentRow.getRowNum());
                     }
                 } else
                 {
                     if (rowContent.toString().contains(x))
                     {
                         rows.add(new ResultRow(
-                                x, filePath, sheetName, currentRow.getRowNum()
+                                x, filePath, sheetName, currentRow.getRowNum() + 1
                         ));
-                        System.out.println(x + " available at: " + currentRow.getRowNum());
                     }
                 }
 
             }
-
-
 
         }
 
@@ -173,8 +166,21 @@ public class Controller {
         fileLV.getItems().clear();
     }
 
+
+    public void clearResults()
+    {
+        resultRows.clear();
+    }
+    /**
+     * Start searching for matches in file
+     * 1. Clear the table
+     * 2. Add every match found
+     */
     public void startSearching()
     {
+
+        //clear the table
+        resultRows.clear();
         final String[] stringToSearch = searchStringTA.getText().trim().split("\n");
 
         if (stringToSearch.length == 0)
@@ -214,7 +220,55 @@ public class Controller {
 
                     for (int i = 0; i < workbook.getNumberOfSheets(); i++)
                     {
-                        resultRows.addAll(getMatch(workbook.getSheetAt(i), stringToSearch, file, matchCase));
+
+                        Sheet sheet = workbook.getSheetAt(i);
+                        Iterator<Row> iterator = sheet.iterator();
+
+                        while (iterator.hasNext()) {
+
+                            Row currentRow = iterator.next();
+                            Iterator<Cell> cellIterator = currentRow.iterator();
+                            StringBuilder rowContent = new StringBuilder();
+                            String sheetName = sheet.getSheetName();
+                            while (cellIterator.hasNext()) {
+                                Cell currentCell = cellIterator.next();
+
+                                //getCellTypeEnum shown as deprecated for version 3.15
+                                //getCellTypeEnum ill be renamed to getCellType starting from version 4.0
+                                if (currentCell.getCellTypeEnum() == CellType.STRING)
+                                    rowContent.append(currentCell.getStringCellValue());
+
+                            }
+
+
+                            for (String x : stringToSearch)
+                            {
+
+                                if (!matchCase)
+                                {
+                                    if (rowContent.toString().toLowerCase().contains(x.toLowerCase()))
+                                    {
+                                        resultRows.add(new ResultRow(
+                                                x, file, sheetName, currentRow.getRowNum()
+                                        ));
+                                        updateMessage("found " + x + " in " + file);
+                                    }
+                                } else
+                                {
+                                    if (rowContent.toString().contains(x))
+                                    {
+                                        resultRows.add(new ResultRow(
+                                                x, file, sheetName, currentRow.getRowNum() + 1
+                                        ));
+                                        updateMessage("found " + x + " in " + file);
+                                    }
+                                }
+
+                            }
+
+                        }
+
+//                        resultRows.addAll(getMatch(workbook.getSheetAt(i), stringToSearch, file, matchCase));
                     }
 
                 }
