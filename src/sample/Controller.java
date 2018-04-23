@@ -3,10 +3,15 @@ package sample;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 import javafx.util.Callback;
@@ -17,9 +22,11 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.controlsfx.dialog.ProgressDialog;
 
+import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -31,6 +38,9 @@ public class Controller {
 
     @FXML
     ListView<String> fileLV;
+
+    @FXML
+    ImageView donateButton;
 
     private ObservableList<String> filePaths;
 
@@ -61,6 +71,26 @@ public class Controller {
         fileLV.setItems(filePaths);
         resultRows = FXCollections.observableArrayList();
         prepareTable();
+        makeDonationButtonClick();
+
+
+    }
+
+    //make the donate button clickable
+    public void makeDonationButtonClick()
+    {
+        donateButton.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                try
+                {
+                    Desktop.getDesktop().browse(new URL("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WPG43D92XKA6A").toURI());
+                } catch (Exception ex)
+                {
+                    ex.printStackTrace();
+                }
+            }
+        });
     }
 
 

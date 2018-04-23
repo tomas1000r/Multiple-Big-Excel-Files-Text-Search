@@ -11,6 +11,8 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -67,7 +69,7 @@
             </Tab>
             <Tab closable="false" text="Settings">
                <content>
-                  <VBox>
+                  <VBox visible="false">
                      <children>
                         <Label text="Activate license" />
                         <TextField promptText="Enter your email address">
@@ -112,6 +114,13 @@
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
+            <Label text="If the program is useful to you, please consider a donation. Thank you very much!" />
+            <ImageView fx:id="donateButton" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/donate-button.png" />
+               </image>
+            </ImageView>
+            <Label text="You can contact me at dat.tm24@gmail.com" />
          </children>
       </VBox>
    </center>
