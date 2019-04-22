@@ -4,3 +4,5 @@ This tool allows you to search through multiple excel files without opening them
 Please download here [Latest Built](https://github.com/datmt/Multiple-Big-Excel-Files-Text-Search/blob/master/out/artifacts/Excel_Ultimate_Search_jar/Excel%20Ultimate%20Search.jar)
 
 For tutorial, please check this out here [Excel Utlimate Search Tutorial](https://binarycarpenter.com/excel-software-how-to-search-for-text-through-multiple-big-excel-files/)
+
+If you are using excel and work a lot with data entry job, a excel autocomplete tool is probably what you need. Get the tool here: https://www.excelautocomplete.com/
