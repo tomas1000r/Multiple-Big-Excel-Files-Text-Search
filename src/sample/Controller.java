@@ -200,18 +200,16 @@ public class Controller {
                                 if (currentCell.getCellTypeEnum() == CellType.STRING) {
                                     rowContent.append(currentCell.getStringCellValue());
                                 }
-
                             }
 
                             for (String x : stringToSearch) {
-
                                 if (!matchCase) {
-                                    if (rowContent.toString().toLowerCase().contains(x.toLowerCase())) {
+                                    if (rowContent.toString().toLowerCase().matches(".*" + x.toLowerCase() + ".*")) {
                                         resultRows.add(new ResultRow(x, file, sheetName, currentRow.getRowNum()));
                                         updateMessage("found " + x + " in " + file);
                                     }
                                 } else {
-                                    if (rowContent.toString().contains(x)) {
+                                    if (rowContent.toString().matches(".*" + x + ".*")) {
                                         resultRows.add(new ResultRow(x, file, sheetName, currentRow.getRowNum() + 1));
                                         updateMessage("found " + x + " in " + file);
                                     }

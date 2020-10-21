@@ -38,7 +38,7 @@
                                         <Insets top="5.0"/>
                                     </VBox.margin>
                                 </Button>
-                                <TextArea fx:id="searchStringTA" promptText="Paste string to search, one per line">
+                                <TextArea fx:id="searchStringTA" promptText="Paste string or regex to search, one per line">
                                     <VBox.margin>
                                         <Insets top="10.0"/>
                                     </VBox.margin>
@@ -97,17 +97,15 @@
         <VBox prefWidth="700.0" BorderPane.alignment="CENTER">
             <children>
                 <Label text="Results"/>
-                <ScrollPane>
-                    <TableView fx:id="resultTable">
-                        <columns>
-                            <TableColumn fx:id="orderCol" minWidth="70.0" prefWidth="70.0" styleClass="no-style-label" text="#"/>
-                            <TableColumn fx:id="searchStringCol" minWidth="100.0" prefWidth="100.0" styleClass="no-style-label" text="String"/>
-                            <TableColumn fx:id="atRowCol" minWidth="100.0" prefWidth="100.0" styleClass="no-style-label" text="At Row #"/>
-                            <TableColumn fx:id="atSheetCol" prefWidth="75.0" styleClass="no-style-label" text="At Sheet #"/>
-                            <TableColumn fx:id="atFileCol" prefWidth="500.0" styleClass="no-style-label" text="In File"/>
-                        </columns>
-                    </TableView>
-                </ScrollPane>
+                <TableView fx:id="resultTable">
+                    <columns>
+                        <TableColumn fx:id="orderCol" minWidth="70.0" prefWidth="70.0" styleClass="no-style-label" text="#"/>
+                        <TableColumn fx:id="searchStringCol" minWidth="100.0" prefWidth="100.0" styleClass="no-style-label" text="String"/>
+                        <TableColumn fx:id="atRowCol" minWidth="100.0" prefWidth="100.0" styleClass="no-style-label" text="At Row #"/>
+                        <TableColumn fx:id="atSheetCol" prefWidth="75.0" styleClass="no-style-label" text="At Sheet #"/>
+                        <TableColumn fx:id="atFileCol" prefWidth="500.0" styleClass="no-style-label" text="In File"/>
+                    </columns>
+                </TableView>
                 <HBox spacing="10">
                     <Button mnemonicParsing="false" onAction="#clearResults" text="Clear results">
                         <VBox.margin>

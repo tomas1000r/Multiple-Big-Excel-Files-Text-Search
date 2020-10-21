@@ -6,8 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d6f4461-54e5-4e3c-b790-972bf484a945" name="Default" comment="Add button 'Copy selection'">
+    <list default="true" id="0d6f4461-54e5-4e3c-b790-972bf484a945" name="Default" comment="Improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +25,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="ba040e76-12b9-4c47-8780-a03c411f890a" />
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1260" />
-    <option name="height" value="737" />
-  </component>
   <component name="ProjectId" id="1jCK6X2YWruyzbQTTx8FboL6hqJ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -38,6 +34,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -143,6 +140,9 @@
       <option name="presentableId" value="Default" />
       <updated>1520271179314</updated>
       <workItem from="1603302460548" duration="2107000" />
+      <workItem from="1603304699574" duration="581000" />
+      <workItem from="1603305428537" duration="304000" />
+      <workItem from="1603305745913" duration="456000" />
     </task>
     <task id="LOCAL-00001" summary="add clear search result">
       <created>1521726589954</created>
@@ -158,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603304288962</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Improvements">
+      <created>1603304730844</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603304730844</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +174,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add clear search result" />
     <MESSAGE value="Add button 'Copy selection'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add button 'Copy selection'" />
+    <MESSAGE value="Improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="384" y="153" key="#Project_Structure" timestamp="1603302478378">
@@ -178,30 +186,50 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="360" y="233" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1603302686447" />
-    <state x="0" y="23" width="1792" height="1097" key="CommitChangelistDialog2" timestamp="1603304288545">
+    <state x="0" y="23" width="1792" height="1097" key="CommitChangelistDialog2" timestamp="1603304730697">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="0" y="23" width="1792" height="1097" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1603304288545" />
-    <state width="1750" height="296" key="GridCell.Tab.0.bottom" timestamp="1603304538529">
+    <state x="0" y="23" width="1792" height="1097" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1603304730697" />
+    <state width="481" height="466" key="DebuggerActiveHint" timestamp="1603305895694">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="296" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1603304538529" />
-    <state width="1750" height="296" key="GridCell.Tab.0.center" timestamp="1603304538528">
+    <state width="481" height="466" key="DebuggerActiveHint/0.23.1792.1097@0.23.1792.1097" timestamp="1603305895694" />
+    <state width="1750" height="366" key="GridCell.Tab.0.bottom" timestamp="1603306118639">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="296" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1603304538528" />
-    <state width="1750" height="296" key="GridCell.Tab.0.left" timestamp="1603304538528">
+    <state width="1750" height="366" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1603306118639" />
+    <state width="1750" height="366" key="GridCell.Tab.0.center" timestamp="1603306118637">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="296" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1603304538528" />
-    <state width="1750" height="296" key="GridCell.Tab.0.right" timestamp="1603304538529">
+    <state width="1750" height="366" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1603306118637" />
+    <state width="1750" height="366" key="GridCell.Tab.0.left" timestamp="1603306118635">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="296" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1603304538529" />
-    <state x="496" y="298" key="Vcs.Push.Dialog.v2" timestamp="1603304290334">
+    <state width="1750" height="366" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1603306118635" />
+    <state width="1750" height="366" key="GridCell.Tab.0.right" timestamp="1603306118638">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="496" y="298" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1603304290334" />
+    <state width="1750" height="366" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1603306118638" />
+    <state width="0" height="0" key="GridCell.Tab.1.bottom" timestamp="1603306118535">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="0" height="0" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1603306118535" />
+    <state width="0" height="0" key="GridCell.Tab.1.center" timestamp="1603306118534">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="0" height="0" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1603306118534" />
+    <state width="0" height="0" key="GridCell.Tab.1.left" timestamp="1603306118534">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="0" height="0" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1603306118534" />
+    <state width="0" height="0" key="GridCell.Tab.1.right" timestamp="1603306118534">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="0" height="0" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1603306118534" />
+    <state x="496" y="298" key="Vcs.Push.Dialog.v2" timestamp="1603304732784">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="496" y="298" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1603304732784" />
     <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1603303609669">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
