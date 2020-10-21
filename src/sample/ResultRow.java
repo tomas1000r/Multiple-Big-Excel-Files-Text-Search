@@ -13,7 +13,6 @@ public class ResultRow {
         setSearchString(_searchString);
         setRowNumber(_rowNumber);
         setSheetName(_sheetName);
-
     }
 
     public String getSheetName() {
