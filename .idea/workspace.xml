@@ -7,24 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d6f4461-54e5-4e3c-b790-972bf484a945" name="Default" comment="Add button 'Copy selection'">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Excel Ultimate Search/resources/donate-button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/Controller$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/Controller$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/Controller$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/ResultRow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/ResultRow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Excel Ultimate Search/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Excel Ultimate Search/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Excel Ultimate Search/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/donate-button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ResultRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ResultRow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,17 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -169,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520271179314</updated>
-      <workItem from="1603302460548" duration="1775000" />
+      <workItem from="1603302460548" duration="2107000" />
     </task>
     <task id="LOCAL-00001" summary="add clear search result">
       <created>1521726589954</created>
@@ -178,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521726589954</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add button 'Copy selection'">
+      <created>1603304288962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603304288962</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +166,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add clear search result" />
-    <option name="LAST_COMMIT_MESSAGE" value="add clear search result" />
+    <MESSAGE value="Add button 'Copy selection'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add button 'Copy selection'" />
   </component>
   <component name="WindowStateProjectService">
     <state x="384" y="153" key="#Project_Structure" timestamp="1603302478378">
@@ -197,26 +178,30 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="360" y="233" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1603302686447" />
-    <state x="0" y="23" width="1792" height="1097" key="CommitChangelistDialog2" timestamp="1603304223935">
+    <state x="0" y="23" width="1792" height="1097" key="CommitChangelistDialog2" timestamp="1603304288545">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="0" y="23" width="1792" height="1097" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1603304223935" />
-    <state width="1750" height="296" key="GridCell.Tab.0.bottom" timestamp="1603303990744">
+    <state x="0" y="23" width="1792" height="1097" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1603304288545" />
+    <state width="1750" height="296" key="GridCell.Tab.0.bottom" timestamp="1603304538529">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="296" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1603303990744" />
-    <state width="1750" height="296" key="GridCell.Tab.0.center" timestamp="1603303990743">
+    <state width="1750" height="296" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1603304538529" />
+    <state width="1750" height="296" key="GridCell.Tab.0.center" timestamp="1603304538528">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="296" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1603303990743" />
-    <state width="1750" height="296" key="GridCell.Tab.0.left" timestamp="1603303990743">
+    <state width="1750" height="296" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1603304538528" />
+    <state width="1750" height="296" key="GridCell.Tab.0.left" timestamp="1603304538528">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="296" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1603303990743" />
-    <state width="1750" height="296" key="GridCell.Tab.0.right" timestamp="1603303990744">
+    <state width="1750" height="296" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1603304538528" />
+    <state width="1750" height="296" key="GridCell.Tab.0.right" timestamp="1603304538529">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="296" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1603303990744" />
+    <state width="1750" height="296" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1603304538529" />
+    <state x="496" y="298" key="Vcs.Push.Dialog.v2" timestamp="1603304290334">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="496" y="298" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1603304290334" />
     <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1603303609669">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
